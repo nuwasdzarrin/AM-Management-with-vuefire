@@ -1,13 +1,8 @@
 <template>
-<v-card flat>
-    <div class="headline text-xs-center pa-5">
-      
-    </div>
     <v-bottom-nav
       :active.sync="bottomNav"
       :value="true"
-      absolute
-      color="transparent"
+      fixed
     >
       <v-btn
         color="teal"
@@ -36,7 +31,6 @@
         <v-icon>chat</v-icon>
       </v-btn>
     </v-bottom-nav>
-</v-card>
 </template>
 <script>
   export default {
